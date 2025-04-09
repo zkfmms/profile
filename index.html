@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>尾崎 文政 | 職務経歴書</title>
+    <title>尾崎 文政 | プロフェッショナルプロフィール</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <style>
         /* 基本スタイル */
         :root {
-            --accent-color: #6366f1;
-            --accent-light: #818cf8;
-            --accent-dark: #4f46e5;
-            --text-primary: #f3f4f6;
-            --text-secondary: #d1d5db;
-            --bg-primary: #111827;
-            --bg-secondary: #1f2937;
-            --bg-card: rgba(31, 41, 55, 0.7);
+            --primary: #3B82F6;
+            --primary-light: #60A5FA;
+            --primary-dark: #2563EB;
+            --secondary: #10B981;
+            --secondary-light: #34D399;
+            --accent: #EC4899;
+            --accent-light: #F472B6;
+            --light: #F9FAFB;
+            --dark: #1F2937;
+            --bg-gradient-start: #EFF6FF;
+            --bg-gradient-end: #FFFFFF;
         }
         
         body {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+            color: var(--dark);
             font-family: 'Inter', 'Noto Sans JP', sans-serif;
             overflow-x: hidden;
         }
@@ -34,17 +37,17 @@
         }
         
         ::-webkit-scrollbar-track {
-            background: var(--bg-secondary);
+            background: #E5E7EB;
         }
         
         ::-webkit-scrollbar-thumb {
-            background: var(--accent-color);
+            background: var(--primary);
             border-radius: 4px;
         }
         
         /* グラデーションテキスト */
         .text-gradient {
-            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -66,7 +69,7 @@
         /* セクションタイトル */
         .section-title {
             position: relative;
-            color: var(--text-primary);
+            color: var(--primary-dark);
             font-weight: 700;
             margin-bottom: 2rem;
             padding-bottom: 0.75rem;
@@ -79,24 +82,42 @@
             bottom: 0;
             width: 4rem;
             height: 3px;
-            background: linear-gradient(90deg, var(--accent-color), transparent);
+            background: linear-gradient(90deg, var(--primary), transparent);
             border-radius: 3px;
         }
         
         /* カードスタイル */
-        .glass-card {
-            background: linear-gradient(135deg, rgba(31, 41, 55, 0.8) 0%, rgba(17, 24, 39, 0.8) 100%);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(99, 102, 241, 0.1);
+        .feature-card {
+            background: white;
             border-radius: 16px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--primary);
+            overflow: hidden;
         }
         
-        .glass-card:hover {
+        .feature-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+            box-shadow: 0 15px 30px rgba(59, 130, 246, 0.1);
+        }
+        
+        /* ヒーローセクション */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='rgba(255,255,255,.1)' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.2;
         }
         
         /* タイムライン */
@@ -112,7 +133,7 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background: linear-gradient(to bottom, var(--accent-color), rgba(99, 102, 241, 0.1));
+            background: linear-gradient(to bottom, var(--primary), rgba(59, 130, 246, 0.1));
         }
         
         .timeline-item {
@@ -130,28 +151,29 @@
             width: 2.5rem;
             height: 2.5rem;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
         }
         
         .timeline-content {
             position: relative;
             padding: 1.5rem;
-            background: rgba(31, 41, 55, 0.5);
+            background: white;
             border-radius: 0.75rem;
-            border-left: 3px solid var(--accent-color);
+            border-left: 3px solid var(--primary);
             margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
         
         .timeline-date {
             display: inline-block;
             padding: 0.25rem 0.75rem;
-            background: rgba(99, 102, 241, 0.2);
-            color: var(--accent-light);
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--primary);
             border-radius: 0.5rem;
             font-size: 0.875rem;
             margin: 0.5rem 0 1rem;
@@ -176,7 +198,7 @@
             top: 0.6rem;
             width: 0.5rem;
             height: 0.5rem;
-            background: var(--accent-light);
+            background: var(--primary-light);
             border-radius: 50%;
         }
         
@@ -184,21 +206,21 @@
         .project-card {
             padding: 1.5rem;
             border-radius: 0.75rem;
-            background: rgba(31, 41, 55, 0.5);
-            border: 1px solid rgba(99, 102, 241, 0.1);
+            background: white;
+            border-top: 3px solid var(--secondary);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             transition: all 0.3s;
         }
         
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.15);
-            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
         
         .project-icon {
             width: 3rem;
             height: 3rem;
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
+            background: linear-gradient(135deg, var(--secondary), var(--secondary-light));
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -206,18 +228,18 @@
             margin-bottom: 1rem;
             font-size: 1.25rem;
             color: white;
-            box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
         }
         
         .project-title {
             font-size: 1.25rem;
             font-weight: 600;
-            color: var(--accent-light);
+            color: var(--secondary);
             margin-bottom: 0.75rem;
         }
         
         .project-description {
-            color: var(--text-secondary);
+            color: var(--dark);
             line-height: 1.6;
         }
         
@@ -232,46 +254,62 @@
             display: flex;
             align-items: flex-start;
             gap: 1.5rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .vision-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
         
         .vision-icon {
             width: 3rem;
             height: 3rem;
             min-width: 3rem;
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.25rem;
             color: white;
-            box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 0 15px rgba(236, 72, 153, 0.3);
         }
         
         .vision-title {
             font-size: 1.25rem;
             font-weight: 600;
-            color: var(--accent-light);
+            color: var(--accent);
             margin-bottom: 0.75rem;
         }
         
         .vision-description {
-            color: var(--text-secondary);
+            color: var(--dark);
             line-height: 1.6;
         }
         
         /* スキルリスト */
         .skill-category {
             padding: 1.5rem;
-            background: rgba(31, 41, 55, 0.5);
+            background: white;
             border-radius: 0.75rem;
-            border: 1px solid rgba(99, 102, 241, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
         
         .skill-category-title {
             font-size: 1.25rem;
             font-weight: 600;
-            color: var(--accent-light);
+            color: var(--primary);
             margin-bottom: 1rem;
             display: flex;
             align-items: center;
@@ -284,7 +322,7 @@
         
         .skill-list li {
             padding: 0.5rem 0;
-            border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
             line-height: 1.5;
         }
         
@@ -293,7 +331,7 @@
         }
         
         .skill-highlight {
-            color: var(--accent-light);
+            color: var(--primary-dark);
             font-weight: 600;
         }
         
@@ -310,15 +348,17 @@
         .value-list li {
             position: relative;
             padding: 1rem 1.5rem;
-            background: rgba(31, 41, 55, 0.3);
+            background: white;
             border-radius: 0.5rem;
             margin-bottom: 1rem;
-            border-left: 3px solid var(--accent-color);
+            border-left: 3px solid var(--primary);
             transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
         
         .value-list li:hover {
-            background: rgba(31, 41, 55, 0.5);
+            background: white;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
             transform: translateX(5px);
         }
         
@@ -326,39 +366,40 @@
         .social-icon {
             width: 2.5rem;
             height: 2.5rem;
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
+            background: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: var(--primary);
             font-size: 1.25rem;
             transition: all 0.3s;
-            box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
         .social-icon:hover {
             transform: translateY(-3px);
-            box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            color: var(--primary-dark);
         }
         
         /* Ask Me セクション */
         .ask-button {
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             color: white;
             font-weight: 600;
             border-radius: 0.5rem;
             padding: 0.75rem 1.5rem;
             cursor: pointer;
             transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
             border: none;
             outline: none;
         }
         
         .ask-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
         }
         
         .ask-button:active {
@@ -366,11 +407,11 @@
         }
         
         #user-question {
-            background: rgba(31, 41, 55, 0.3);
-            border: 1px solid rgba(99, 102, 241, 0.2);
+            background: white;
+            border: 1px solid rgba(59, 130, 246, 0.2);
             border-radius: 0.5rem;
             padding: 1rem;
-            color: var(--text-primary);
+            color: var(--dark);
             width: 100%;
             height: 6rem;
             resize: none;
@@ -379,24 +420,24 @@
         }
         
         #user-question:focus {
-            border-color: var(--accent-color);
-            box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
-            background: rgba(31, 41, 55, 0.5);
+            border-color: var(--primary);
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
         }
         
         #answer-container {
-            background: rgba(31, 41, 55, 0.3);
-            border: 1px solid rgba(99, 102, 241, 0.2);
+            background: white;
+            border: 1px solid rgba(59, 130, 246, 0.2);
             border-radius: 0.5rem;
             padding: 1.5rem;
             margin-top: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
         
         .answer-icon {
             width: 2.5rem;
             height: 2.5rem;
             min-width: 2.5rem;
-            background: linear-gradient(135deg, var(--accent-color), var(--accent-dark));
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -415,7 +456,7 @@
         .loading-dots div {
             width: 0.5rem;
             height: 0.5rem;
-            background-color: var(--accent-light);
+            background-color: var(--primary-light);
             border-radius: 50%;
             animation: loadingDots 1.4s infinite ease-in-out both;
         }
@@ -435,12 +476,43 @@
         
         /* プロフィール画像 */
         .profile-image {
-            width: 5rem;
-            height: 5rem;
+            width: 7rem;
+            height: 7rem;
             border-radius: 50%;
-            border: 2px solid var(--accent-color);
-            box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+            border: 3px solid white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             object-fit: cover;
+        }
+        
+        /* CTAセクション */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+            padding: 4rem 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button {
+            background: white;
+            color: var(--primary);
+            font-weight: 600;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            display: inline-block;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* マージンとパディングのユーティリティ */
+        .section-spacing {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
         }
         
         /* レスポンシブ調整 */
@@ -450,27 +522,78 @@
             }
             
             .profile-image {
-                width: 7rem;
-                height: 7rem;
+                width: 9rem;
+                height: 9rem;
             }
+        }
+
+        /* アニメーションとトランジション */
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .bounce-in {
+            animation: bounceIn 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+        
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: scale(0.3); }
+            50% { opacity: 1; transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
+
+        /* 特徴的なアクセント要素 */
+        .accent-blob {
+            position: absolute;
+            background: var(--primary-light);
+            opacity: 0.1;
+            border-radius: 50%;
+            filter: blur(40px);
+            z-index: -1;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--primary);
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
-    <header class="py-16 md:py-24 relative">
-        <div class="container mx-auto px-8 md:px-12">
+    <!-- ヒーローセクション -->
+    <section class="hero-section">
+        <div class="hero-pattern"></div>
+        <div class="container mx-auto px-8 md:px-12 py-16 md:py-24 relative">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div class="flex items-center mb-8 md:mb-0">
-                    <div class="mr-6 hidden md:block">
-                        <img src="/api/placeholder/150/150" alt="尾崎 文政" class="profile-image">
+                    <div class="mr-6">
+                        <img src="/api/placeholder/180/180" alt="尾崎 文政" class="profile-image bounce-in">
                     </div>
                     <div>
-                        <h1 class="text-5xl md:text-6xl font-bold text-gradient animate-gradient">尾崎 文政</h1>
-                        <p class="text-2xl md:text-3xl mt-3 text-indigo-300 font-light">Fumimasa Ozaki</p>
-                        <p class="mt-4 text-xl text-gray-300">起業家・プログラマー・デザイナー・画家</p>
+                        <div class="flex flex-wrap">
+                            <span class="badge">起業家</span>
+                            <span class="badge">プログラマー</span>
+                            <span class="badge">デザイナー</span>
+                            <span class="badge">画家</span>
+                        </div>
+                        <h1 class="text-5xl md:text-6xl font-bold mt-2">尾崎 文政</h1>
+                        <p class="text-2xl md:text-3xl mt-3 text-white opacity-90 font-light">Fumimasa Ozaki</p>
+                        <p class="mt-6 text-xl max-w-2xl">あなたのビジネスを次のレベルへ。<br>AIとデザインの力で、効率化と差別化を同時に実現します。</p>
                     </div>
                 </div>
-                <div class="flex space-x-5">
+                <div class="flex space-x-4">
                     <a href="mailto:your-email@example.com" class="social-icon">
                         <i class="fas fa-envelope"></i>
                     </a>
@@ -483,107 +606,121 @@
                 </div>
             </div>
             <div class="mt-12 md:mt-16">
-                <div class="typewriter-container flex items-center">
-                    <p class="typewriter-prefix text-indigo-300 font-semibold mr-3 text-xl">専門:</p>
+                <div class="typewriter-container flex items-center bg-white bg-opacity-20 px-4 py-3 rounded-lg inline-block">
+                    <p class="typewriter-prefix font-semibold mr-3 text-xl">専門:</p>
                     <span id="typewriter" class="text-xl"></span>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <main class="container mx-auto px-8 md:px-12 pb-32">
-        <section class="glass-card p-10 md:p-12 mb-20 rounded-3xl">
-            <h2 class="section-title mb-10 text-3xl">提供できる価値</h2>
+    <div class="container mx-auto px-8 md:px-12">
+        <!-- 提供価値セクション -->
+        <section class="section-spacing">
+            <h2 class="section-title text-3xl">提供できる価値</h2>
             
-            <div class="value-section mb-12">
-                <h3 class="text-2xl font-semibold text-indigo-300 mb-6 flex items-center">
-                    <i class="fas fa-smile-beam mr-4"></i>
-                    社員の働き方改革・幸福度向上
-                </h3>
-                <ul class="value-list grid gap-6 md:grid-cols-1 lg:grid-cols-2">
-                    <li><strong>単調作業からの解放:</strong> 繰り返し作業を自動化し、社員が本来の専門性を活かせる環境づくり</li>
-                    <li><strong>「楽して良い仕事」の実現:</strong> 技術の力で社員の労力を削減しながら成果の質を高める仕組み構築</li>
-                    <li><strong>全員参加型のデジタル化:</strong> エンジニアでない社員も使いこなせるシンプルな自動化ツール提供</li>
-                </ul>
-            </div>
-            
-            <div class="value-section mb-12">
-                <h3 class="text-2xl font-semibold text-indigo-300 mb-6 flex items-center">
-                    <i class="fas fa-chart-line mr-4"></i>
-                    CTO/COO視点での組織改革
-                </h3>
-                <ul class="value-list grid gap-6 md:grid-cols-1 lg:grid-cols-2">
-                    <li><strong>技術戦略の策定:</strong> 御社の課題に最適な技術選定と中長期のロードマップ設計</li>
-                    <li><strong>組織横断的な業務改善:</strong> 部門間の連携を強化するシステム構築とプロセス改善</li>
-                    <li><strong>データ駆動経営の実現:</strong> 経営判断に必要なデータを自動収集・分析するダッシュボード構築</li>
-                </ul>
-            </div>
-
-            <div class="value-section mb-12">
-                <h3 class="text-2xl font-semibold text-indigo-300 mb-6 flex items-center">
-                    <i class="fas fa-comments mr-4"></i>
-                    カスタマーサポート向上
-                </h3>
-                <ul class="value-list grid gap-6 md:grid-cols-1 lg:grid-cols-2">
-                    <li><strong>高度なチャットボット開発:</strong> お客様の質問に自然な対話で回答するAIシステム</li>
-                    <li><strong>LINEミニアプリ連携:</strong> 顧客とのコミュニケーション窓口をLINE上に統合</li>
-                    <li><strong>多言語対応システム:</strong> 外国人顧客とのコミュニケーションを自動翻訳でサポート</li>
-                </ul>
-            </div>
-
-            <div class="value-section">
-                <h3 class="text-2xl font-semibold text-indigo-300 mb-6 flex items-center">
-                    <i class="fas fa-bullhorn mr-4"></i>
-                    営業・マーケティング強化
-                </h3>
-                <ul class="value-list grid gap-6 md:grid-cols-1 lg:grid-cols-2">
-                    <li><strong>SNS分析・活用:</strong> TwitterやInstagramのAPI連携で競合分析や市場動向をリアルタイム把握</li>
-                    <li><strong>インバウンド集客:</strong> 外国人観光客向けの多言語SNSコンテンツ自動生成</li>
-                    <li><strong>リード獲得の自動化:</strong> 新規開業店舗の連絡先や情報を自動で収集・整理し営業リスト化</li>
-                </ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="feature-card p-8 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div style="background: linear-gradient(135deg, #3B82F6, #60A5FA);" class="w-12 h-12 rounded-full flex items-center justify-center text-white mr-4 shadow-lg">
+                            <i class="fas fa-smile-beam text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">社員の働き方改革・幸福度向上</h3>
+                    </div>
+                    <ul class="value-list mt-4">
+                        <li><strong>単調作業からの解放:</strong> 繰り返し作業を自動化し、社員が本来の専門性を活かせる環境づくり</li>
+                        <li><strong>「楽して良い仕事」の実現:</strong> 技術の力で社員の労力を削減しながら成果の質を高める仕組み構築</li>
+                        <li><strong>全員参加型のデジタル化:</strong> エンジニアでない社員も使いこなせるシンプルな自動化ツール提供</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card p-8 fade-in" style="animation-delay: 0.2s;">
+                    <div class="flex items-center mb-4">
+                        <div style="background: linear-gradient(135deg, #3B82F6, #60A5FA);" class="w-12 h-12 rounded-full flex items-center justify-center text-white mr-4 shadow-lg">
+                            <i class="fas fa-chart-line text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">CTO/COO視点での組織改革</h3>
+                    </div>
+                    <ul class="value-list mt-4">
+                        <li><strong>技術戦略の策定:</strong> 御社の課題に最適な技術選定と中長期のロードマップ設計</li>
+                        <li><strong>組織横断的な業務改善:</strong> 部門間の連携を強化するシステム構築とプロセス改善</li>
+                        <li><strong>データ駆動経営の実現:</strong> 経営判断に必要なデータを自動収集・分析するダッシュボード構築</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card p-8 fade-in" style="animation-delay: 0.4s;">
+                    <div class="flex items-center mb-4">
+                        <div style="background: linear-gradient(135deg, #3B82F6, #60A5FA);" class="w-12 h-12 rounded-full flex items-center justify-center text-white mr-4 shadow-lg">
+                            <i class="fas fa-comments text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">カスタマーサポート向上</h3>
+                    </div>
+                    <ul class="value-list mt-4">
+                        <li><strong>高度なチャットボット開発:</strong> お客様の質問に自然な対話で回答するAIシステム</li>
+                        <li><strong>LINEミニアプリ連携:</strong> 顧客とのコミュニケーション窓口をLINE上に統合</li>
+                        <li><strong>多言語対応システム:</strong> 外国人顧客とのコミュニケーションを自動翻訳でサポート</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card p-8 fade-in" style="animation-delay: 0.6s;">
+                    <div class="flex items-center mb-4">
+                        <div style="background: linear-gradient(135deg, #3B82F6, #60A5FA);" class="w-12 h-12 rounded-full flex items-center justify-center text-white mr-4 shadow-lg">
+                            <i class="fas fa-bullhorn text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">営業・マーケティング強化</h3>
+                    </div>
+                    <ul class="value-list mt-4">
+                        <li><strong>SNS分析・活用:</strong> TwitterやInstagramのAPI連携で競合分析や市場動向をリアルタイム把握</li>
+                        <li><strong>インバウンド集客:</strong> 外国人観光客向けの多言語SNSコンテンツ自動生成</li>
+                        <li><strong>リード獲得の自動化:</strong> 新規開業店舗の連絡先や情報を自動で収集・整理し営業リスト化</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <!-- Ask Me Anything セクション -->
-        <section class="glass-card p-10 md:p-12 mb-20 rounded-3xl">
-            <h2 class="section-title mb-6 text-3xl">Ask Me</h2>
-            <p class="mb-6 text-gray-300">何か具体的にできるか知りたいことがあれば、ここで質問してください。AIがお答えします。</p>
-            
-            <div class="flex flex-col">
-                <div class="mb-6">
-                    <textarea id="user-question" placeholder="例: LINEボットの開発はできますか？" class="w-full p-4 bg-gray-800 bg-opacity-50 border border-indigo-500 rounded-xl text-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
-                </div>
+        <section class="section-spacing">
+            <div class="feature-card p-8">
+                <h2 class="section-title text-3xl">どんなことができるか質問してみる</h2>
+                <p class="mb-6 text-gray-600">具体的にできることを知りたい場合は、こちらで質問してみてください。AIがすぐに回答します。</p>
                 
-                <div class="flex justify-end">
-                    <button id="ask-button" class="ask-button px-6 py-3 rounded-xl flex items-center">
-                        <i class="fas fa-paper-plane mr-2"></i> 質問する
-                    </button>
-                </div>
-                
-                <div id="answer-container" class="mt-8 p-6 rounded-xl bg-gray-800 bg-opacity-30 border border-indigo-500 hidden">
-                    <div class="flex items-start">
-                        <div class="answer-icon mr-4">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="answer-content">
-                            <p id="answer-text" class="text-gray-200"></p>
+                <div class="flex flex-col">
+                    <div class="mb-6">
+                        <textarea id="user-question" placeholder="例: LINEボットの開発はできますか？" class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+                    </div>
+                    
+                    <div class="flex justify-end">
+                        <button id="ask-button" class="ask-button px-6 py-3 rounded-xl flex items-center">
+                            <i class="fas fa-paper-plane mr-2"></i> 質問する
+                        </button>
+                    </div>
+                    
+                    <div id="answer-container" class="mt-8 p-6 rounded-xl bg-gray-50 border border-gray-200 hidden">
+                        <div class="flex items-start">
+                            <div class="answer-icon mr-4">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="answer-content">
+                                <p id="answer-text" class="text-gray-700"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="glass-card p-10 md:p-12 mb-20 rounded-3xl">
-            <h2 class="section-title mb-12 text-3xl">職務経歴</h2>
+        <!-- 職務経歴セクション -->
+        <section class="section-spacing">
+            <h2 class="section-title text-3xl">実績・職務経歴</h2>
             
             <div class="timeline">
                 <!-- SNS活用・API連携プロジェクト -->
-                <div class="timeline-item">
+                <div class="timeline-item fade-in">
                     <div class="timeline-dot">
                         <i class="fab fa-twitter"></i>
                     </div>
                     <div class="timeline-content">
-                        <h3 class="text-2xl font-semibold text-indigo-300">SNS活用・API連携プロジェクト</h3>
+                        <h3 class="text-xl font-semibold text-blue-600">SNS活用・API連携プロジェクト</h3>
                         <p class="timeline-date">2023年〜現在</p>
                         <ul class="timeline-details">
                             <li>Twitter/Instagram APIを活用した競合分析・市場調査ツール開発</li>
@@ -594,12 +731,12 @@
                 </div>
 
                 <!-- チャットボット・LINE連携開発 -->
-                <div class="timeline-item">
+                <div class="timeline-item fade-in" style="animation-delay: 0.2s;">
                     <div class="timeline-dot">
                         <i class="fab fa-line"></i>
                     </div>
                     <div class="timeline-content">
-                        <h3 class="text-2xl font-semibold text-indigo-300">チャットボット・LINE連携開発</h3>
+                        <h3 class="text-xl font-semibold text-blue-600">チャットボット・LINE連携開発</h3>
                         <p class="timeline-date">2023年〜現在</p>
                         <ul class="timeline-details">
                             <li>高度な対話型AIチャットボットの開発と導入支援</li>
@@ -610,12 +747,12 @@
                 </div>
 
                 <!-- デザイン・ブランディング -->
-                <div class="timeline-item">
+                <div class="timeline-item fade-in" style="animation-delay: 0.4s;">
                     <div class="timeline-dot">
                         <i class="fas fa-paint-brush"></i>
                     </div>
                     <div class="timeline-content">
-                        <h3 class="text-2xl font-semibold text-indigo-300">デザイン・ブランディング</h3>
+                        <h3 class="text-xl font-semibold text-blue-600">デザイン・ブランディング</h3>
                         <p class="timeline-date">2017年〜現在</p>
                         <ul class="timeline-details">
                             <li>百貨店出店ゼリーブランド「マイミニヨン」のロゴ・パッケージデザイン</li>
@@ -627,12 +764,12 @@
                 </div>
 
                 <!-- チェストネクタイブランド運営 -->
-                <div class="timeline-item">
+                <div class="timeline-item fade-in" style="animation-delay: 0.6s;">
                     <div class="timeline-dot">
                         <i class="fas fa-tshirt"></i>
                     </div>
                     <div class="timeline-content">
-                        <h3 class="text-2xl font-semibold text-indigo-300">チェストネクタイ "Altair" ブランド運営</h3>
+                        <h3 class="text-xl font-semibold text-blue-600">チェストネクタイ "Altair" ブランド運営</h3>
                         <p class="timeline-date">2016年〜2025年</p>
                         <ul class="timeline-details">
                             <li>デザインから販売まで一貫して手掛けるブランド運営</li>
@@ -644,11 +781,12 @@
             </div>
         </section>
 
-        <section class="glass-card p-10 md:p-12 mb-20 rounded-3xl">
-            <h2 class="section-title mb-10 text-3xl">現在進行中のプロジェクト</h2>
+        <!-- 進行中プロジェクトセクション -->
+        <section class="section-spacing">
+            <h2 class="section-title text-3xl">現在進行中のプロジェクト</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div class="project-card">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-card fade-in">
                     <div class="project-icon">
                         <i class="fas fa-window-maximize"></i>
                     </div>
@@ -659,7 +797,7 @@
                     </p>
                 </div>
                 
-                <div class="project-card">
+                <div class="project-card fade-in" style="animation-delay: 0.2s;">
                     <div class="project-icon">
                         <i class="fas fa-video"></i>
                     </div>
@@ -670,7 +808,7 @@
                     </p>
                 </div>
                 
-                <div class="project-card">
+                <div class="project-card fade-in" style="animation-delay: 0.4s;">
                     <div class="project-icon">
                         <i class="fas fa-envelope-open-text"></i>
                     </div>
@@ -681,7 +819,7 @@
                     </p>
                 </div>
                 
-                <div class="project-card">
+                <div class="project-card fade-in" style="animation-delay: 0.6s;">
                     <div class="project-icon">
                         <i class="fas fa-glass-cheers"></i>
                     </div>
@@ -694,11 +832,12 @@
             </div>
         </section>
         
-        <section class="glass-card p-10 md:p-12 mb-20 rounded-3xl">
-            <h2 class="section-title mb-10 text-3xl">キャリアビジョン・実現したいこと</h2>
+        <!-- キャリアビジョンセクション -->
+        <section class="section-spacing">
+            <h2 class="section-title text-3xl">キャリアビジョン・実現したいこと</h2>
             
             <div class="vision-container">
-                <div class="vision-item">
+                <div class="vision-item fade-in">
                     <div class="vision-icon">
                         <i class="fas fa-chart-bar"></i>
                     </div>
@@ -712,7 +851,7 @@
                     </div>
                 </div>
                 
-                <div class="vision-item">
+                <div class="vision-item fade-in" style="animation-delay: 0.3s;">
                     <div class="vision-icon">
                         <i class="fas fa-user-graduate"></i>
                     </div>
@@ -726,7 +865,7 @@
                     </div>
                 </div>
                 
-                <div class="vision-item">
+                <div class="vision-item fade-in" style="animation-delay: 0.6s;">
                     <div class="vision-icon">
                         <i class="fas fa-robot"></i>
                     </div>
@@ -742,11 +881,12 @@
             </div>
         </section>
 
-        <section class="glass-card p-10 md:p-12 rounded-3xl">
-            <h2 class="section-title mb-12 text-3xl">エンジニア向けスキルセット</h2>
+        <!-- スキルセットセクション -->
+        <section class="section-spacing">
+            <h2 class="section-title text-3xl">エンジニア向けスキルセット</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="skill-category">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="skill-category fade-in">
                     <h3 class="skill-category-title">
                         <i class="fas fa-code mr-3"></i>言語・フレームワーク
                     </h3>
@@ -758,7 +898,7 @@
                     </ul>
                 </div>
                 
-                <div class="skill-category">
+                <div class="skill-category fade-in" style="animation-delay: 0.2s;">
                     <h3 class="skill-category-title">
                         <i class="fas fa-share-alt mr-3"></i>API連携・SNS統合
                     </h3>
@@ -769,7 +909,7 @@
                     </ul>
                 </div>
                 
-                <div class="skill-category">
+                <div class="skill-category fade-in" style="animation-delay: 0.4s;">
                     <h3 class="skill-category-title">
                         <i class="fas fa-brain mr-3"></i>AI・機械学習
                     </h3>
@@ -781,7 +921,7 @@
                     </ul>
                 </div>
                 
-                <div class="skill-category">
+                <div class="skill-category fade-in" style="animation-delay: 0.6s;">
                     <h3 class="skill-category-title">
                         <i class="fas fa-paint-brush mr-3"></i>デザイン・UI/UX
                     </h3>
@@ -792,7 +932,7 @@
                     </ul>
                 </div>
                 
-                <div class="skill-category">
+                <div class="skill-category fade-in" style="animation-delay: 0.8s;">
                     <h3 class="skill-category-title">
                         <i class="fas fa-shopping-cart mr-3"></i>Web開発・EC連携
                     </h3>
@@ -802,7 +942,7 @@
                     </ul>
                 </div>
                 
-                <div class="skill-category">
+                <div class="skill-category fade-in" style="animation-delay: 1s;">
                     <h3 class="skill-category-title">
                         <i class="fas fa-server mr-3"></i>インフラ・クラウド
                     </h3>
@@ -814,13 +954,25 @@
                 </div>
             </div>
         </section>
-    </main>
+    </div>
 
-    <footer class="py-12 text-center">
+    <!-- CTAセクション -->
+    <section class="cta-section mt-20">
+        <div class="hero-pattern"></div>
+        <div class="container mx-auto px-8 md:px-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">あなたのビジネスの可能性を広げませんか？</h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto">AIとデザインの力で、業務効率化と顧客体験向上を同時に実現。<br>まずはお気軽にご相談ください。</p>
+            <a href="mailto:your-email@example.com" class="cta-button text-lg px-8 py-4 rounded-lg">
+                <i class="fas fa-envelope mr-2"></i> お問い合わせする
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center bg-gray-50">
         <div class="container mx-auto">
-            <p class="text-lg">© 2025 尾崎 文政 | 最終更新: <span id="last-updated"></span></p>
+            <p class="text-lg text-gray-600">© 2025 尾崎 文政 | 最終更新: <span id="last-updated"></span></p>
             <p class="mt-4 text-md">
-                <a href="#" class="text-indigo-300 hover:text-indigo-100 transition duration-300 border-b border-indigo-500 pb-1">PDFをダウンロード</a>
+                <a href="#" class="text-blue-500 hover:text-blue-700 transition duration-300 border-b border-blue-300 pb-1">PDFをダウンロード</a>
             </p>
         </div>
     </footer>
@@ -900,6 +1052,28 @@
                 return "その質問については明確にお答えできません。尾崎ができることとしては、AIチャットボット開発、Webスクレイピング、業務自動化、LINE連携、SNS API活用、デザイン制作などがあります。より具体的な内容をお聞きしたい場合は、これらの分野に関してご質問ください。";
             }
         }
+
+        // アニメーション効果
+        document.addEventListener('DOMContentLoaded', function() {
+            // スクロールアニメーション
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(el);
+            });
+        });
     </script>
 </body>
 </html>
