@@ -3,104 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>尾崎 文政 | 職務経歴書</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <title>尾崎 文政 | プロフェッショナルプロフィール</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
-<body class="twilight-theme bg-gradient-to-br from-gray-900 to-gray-800 text-gray-200 min-h-screen">
-    <header class="py-10 md:py-16">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                <div class="mb-6 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold text-gradient">尾崎 文政</h1>
-                    <p class="text-xl md:text-2xl mt-2 text-indigo-300">Fumimasa Ozaki</p>
-                    <p class="mt-3 text-lg">起業家・プログラマー・デザイナー・画家</p>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="mailto:your-email@example.com" class="hover-effect social-icon">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://github.com/yourusername" target="_blank" class="hover-effect social-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover-effect social-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+<body>
+    <div class="container">
+        <!-- ヘッダーセクション -->
+        <header class="header-section">
+            <div class="profile-container">
+                <img src="/api/placeholder/150/150" alt="尾崎 文政" class="profile-image">
+                <div class="profile-info">
+                    <h1 class="profile-name">尾崎 文政</h1>
+                    <span class="profile-en-name">Fumimasa Ozaki</span>
+                    <p class="profile-title">起業家・プログラマー・デザイナー・画家</p>
                 </div>
             </div>
-            <div class="mt-8 md:mt-12">
-                <div class="typewriter-container flex items-center">
-                    <p class="typewriter-prefix text-indigo-300 font-semibold mr-2">専門:</p>
-                    <span id="typewriter" class="text-lg"></span>
-                </div>
+        </header>
+
+        <div class="typewriter-section">
+            <div class="typewriter-container">
+                <span class="typewriter-prefix">専門:</span>
+                <span id="typewriter" class="typewriter-text"></span>
             </div>
         </div>
-    </header>
 
-    <main class="container mx-auto px-6 pb-20">
-        <section class="glass-card p-8 mb-12 rounded-2xl">
-            <h2 class="section-title mb-6">提供できる価値</h2>
+        <!-- 提供価値セクション -->
+        <section class="value-section section-spacing">
+            <h2 class="section-title">提供できる価値</h2>
             
-            <div class="value-section mb-8">
-                <h3 class="text-xl font-semibold text-indigo-300 mb-4">
-                    <i class="fas fa-smile-beam mr-2"></i>社員の働き方改革・幸福度向上
-                </h3>
-                <ul class="value-list">
-                    <li><strong>単調作業からの解放:</strong> 繰り返し作業を自動化し、社員が本来の専門性を活かせる環境づくり</li>
-                    <li><strong>「楽して良い仕事」の実現:</strong> 技術の力で社員の労力を削減しながら成果の質を高める仕組み構築</li>
-                    <li><strong>全員参加型のデジタル化:</strong> エンジニアでない社員も使いこなせるシンプルな自動化ツール提供</li>
-                </ul>
-            </div>
-            
-            <div class="value-section mb-8">
-                <h3 class="text-xl font-semibold text-indigo-300 mb-4">
-                    <i class="fas fa-chart-line mr-2"></i>CTO/COO視点での組織改革
-                </h3>
-                <ul class="value-list">
-                    <li><strong>技術戦略の策定:</strong> 御社の課題に最適な技術選定と中長期のロードマップ設計</li>
-                    <li><strong>組織横断的な業務改善:</strong> 部門間の連携を強化するシステム構築とプロセス改善</li>
-                    <li><strong>データ駆動経営の実現:</strong> 経営判断に必要なデータを自動収集・分析するダッシュボード構築</li>
-                </ul>
-            </div>
-
-            <div class="value-section mb-8">
-                <h3 class="text-xl font-semibold text-indigo-300 mb-4">
-                    <i class="fas fa-comments mr-2"></i>カスタマーサポート向上
-                </h3>
-                <ul class="value-list">
-                    <li><strong>高度なチャットボット開発:</strong> お客様の質問に自然な対話で回答するAIシステム</li>
-                    <li><strong>LINEミニアプリ連携:</strong> 顧客とのコミュニケーション窓口をLINE上に統合</li>
-                    <li><strong>多言語対応システム:</strong> 外国人顧客とのコミュニケーションを自動翻訳でサポート</li>
-                </ul>
-            </div>
-
-            <div class="value-section">
-                <h3 class="text-xl font-semibold text-indigo-300 mb-4">
-                    <i class="fas fa-bullhorn mr-2"></i>営業・マーケティング強化
-                </h3>
-                <ul class="value-list">
-                    <li><strong>SNS分析・活用:</strong> TwitterやInstagramのAPI連携で競合分析や市場動向をリアルタイム把握</li>
-                    <li><strong>インバウンド集客:</strong> 外国人観光客向けの多言語SNSコンテンツ自動生成</li>
-                    <li><strong>リード獲得の自動化:</strong> 新規開業店舗の連絡先や情報を自動で収集・整理し営業リスト化</li>
-                </ul>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">社員の働き方改革・幸福度向上</h3>
+                    </div>
+                    <ul class="card-list">
+                        <li><strong>単調作業からの解放:</strong> 繰り返し作業を自動化し、社員が本来の専門性を活かせる環境づくり</li>
+                        <li><strong>「楽して良い仕事」の実現:</strong> 技術の力で社員の労力を削減しながら成果の質を高める仕組み構築</li>
+                        <li><strong>全員参加型のデジタル化:</strong> エンジニアでない社員も使いこなせるシンプルな自動化ツール提供</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">CTO/COO視点での組織改革</h3>
+                    </div>
+                    <ul class="card-list">
+                        <li><strong>技術戦略の策定:</strong> 御社の課題に最適な技術選定と中長期のロードマップ設計</li>
+                        <li><strong>組織横断的な業務改善:</strong> 部門間の連携を強化するシステム構築とプロセス改善</li>
+                        <li><strong>データ駆動経営の実現:</strong> 経営判断に必要なデータを自動収集・分析するダッシュボード構築</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">カスタマーサポート向上</h3>
+                    </div>
+                    <ul class="card-list">
+                        <li><strong>高度なチャットボット開発:</strong> お客様の質問に自然な対話で回答するAIシステム</li>
+                        <li><strong>LINEミニアプリ連携:</strong> 顧客とのコミュニケーション窓口をLINE上に統合</li>
+                        <li><strong>多言語対応システム:</strong> 外国人顧客とのコミュニケーションを自動翻訳でサポート</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">営業・マーケティング強化</h3>
+                    </div>
+                    <ul class="card-list">
+                        <li><strong>SNS分析・活用:</strong> TwitterやInstagramのAPI連携で競合分析や市場動向をリアルタイム把握</li>
+                        <li><strong>インバウンド集客:</strong> 外国人観光客向けの多言語SNSコンテンツ自動生成</li>
+                        <li><strong>リード獲得の自動化:</strong> 新規開業店舗の連絡先や情報を自動で収集・整理し営業リスト化</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section class="glass-card p-8 mb-12 rounded-2xl">
-            <h2 class="section-title mb-8">職務経歴</h2>
+        <!-- 職務経歴セクション -->
+        <section class="career-section section-spacing">
+            <h2 class="section-title">実績・職務経歴</h2>
             
             <div class="timeline">
                 <!-- SNS活用・API連携プロジェクト -->
                 <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fab fa-twitter"></i>
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">SNS活用・API連携プロジェクト</h3>
                     </div>
                     <div class="timeline-content">
-                        <h3 class="text-xl font-semibold text-indigo-300">SNS活用・API連携プロジェクト</h3>
                         <p class="timeline-date">2023年〜現在</p>
-                        <ul class="timeline-details">
+                        <ul class="timeline-list">
                             <li>Twitter/Instagram APIを活用した競合分析・市場調査ツール開発</li>
                             <li>SNSデータをもとにした効果的なマーケティング戦略立案支援</li>
                             <li>インバウンド向けSNSコンテンツ自動生成システム構築</li>
@@ -110,13 +102,12 @@
 
                 <!-- チャットボット・LINE連携開発 -->
                 <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fab fa-line"></i>
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">チャットボット・LINE連携開発</h3>
                     </div>
                     <div class="timeline-content">
-                        <h3 class="text-xl font-semibold text-indigo-300">チャットボット・LINE連携開発</h3>
                         <p class="timeline-date">2023年〜現在</p>
-                        <ul class="timeline-details">
+                        <ul class="timeline-list">
                             <li>高度な対話型AIチャットボットの開発と導入支援</li>
                             <li>LINEミニアプリ開発によるカスタマーエンゲージメント向上</li>
                             <li>LINE API連携による顧客サポート自動化システム</li>
@@ -126,14 +117,13 @@
 
                 <!-- デザイン・ブランディング -->
                 <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fas fa-paint-brush"></i>
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">デザイン・ブランディング</h3>
                     </div>
                     <div class="timeline-content">
-                        <h3 class="text-xl font-semibold text-indigo-300">デザイン・ブランディング</h3>
                         <p class="timeline-date">2017年〜現在</p>
-                        <ul class="timeline-details">
-                            <li>百貨店出店ゼリーブランド「マイミニヨン」のロゴ・パッケージデザイン</li>
+                        <ul class="timeline-list">
+                            <li>百貨店出店ゼリーブランドのロゴ・パッケージデザイン</li>
                             <li>2018年に東京藝術大学デザイン科学生を束ねてデザイン会社運営</li>
                             <li>VC向け投資資料制作</li>
                             <li>一般社団法人民泊協会のロゴデザイン/内閣府提出資料制作</li>
@@ -143,13 +133,12 @@
 
                 <!-- チェストネクタイブランド運営 -->
                 <div class="timeline-item">
-                    <div class="timeline-dot">
-                        <i class="fas fa-tshirt"></i>
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">チェストネクタイ "Altair" ブランド運営</h3>
                     </div>
                     <div class="timeline-content">
-                        <h3 class="text-xl font-semibold text-indigo-300">チェストネクタイ "Altair" ブランド運営</h3>
                         <p class="timeline-date">2016年〜2025年</p>
-                        <ul class="timeline-details">
+                        <ul class="timeline-list">
                             <li>デザインから販売まで一貫して手掛けるブランド運営</li>
                             <li>中国人と交渉し、製品値段交渉や受注、輸入手続き</li>
                             <li>銀座松屋やクルーズ船飛鳥IIのレストランで使用されるアイテム提供</li>
@@ -159,15 +148,15 @@
             </div>
         </section>
 
-        <section class="glass-card p-8 mb-12 rounded-2xl">
-            <h2 class="section-title mb-6">現在進行中のプロジェクト</h2>
+        <!-- 進行中プロジェクトセクション -->
+        <section class="projects-section section-spacing">
+            <h2 class="section-title">現在進行中のプロジェクト</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="card-grid">
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-window-maximize"></i>
+                    <div class="project-header">
+                        <h3 class="project-title">全自動LPシステム</h3>
                     </div>
-                    <h3 class="project-title">全自動LPシステム</h3>
                     <p class="project-description">
                         企業情報を入力するだけで営業に特化したランディングページを自動生成。
                         デザイン・コーディング工数を大幅削減しながら高品質なLPを実現。
@@ -175,10 +164,9 @@
                 </div>
                 
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-video"></i>
+                    <div class="project-header">
+                        <h3 class="project-title">インバウンド向けSNSリール動画自動作成ツール</h3>
                     </div>
-                    <h3 class="project-title">インバウンド向けSNSリール動画自動作成ツール</h3>
                     <p class="project-description">
                         日本の魅力を伝える多言語対応の短尺動画を自動生成。
                         外国人観光客の集客・情報発信を効率化。
@@ -186,10 +174,9 @@
                 </div>
                 
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-envelope-open-text"></i>
+                    <div class="project-header">
+                        <h3 class="project-title">AI自動返信メールシステム</h3>
                     </div>
-                    <h3 class="project-title">AI自動返信メールシステム</h3>
                     <p class="project-description">
                         問い合わせ内容を分析し、最適な返信を自動生成。
                         対応漏れゼロ・応答時間の劇的短縮を実現。
@@ -197,10 +184,9 @@
                 </div>
                 
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-glass-cheers"></i>
+                    <div class="project-header">
+                        <h3 class="project-title">店舗活性化サービス「チアーズガール」</h3>
                     </div>
-                    <h3 class="project-title">店舗活性化サービス「チアーズガール」</h3>
                     <p class="project-description">
                         飲食店の空き時間に一般女性を派遣し、店舗を活性化。
                         売上向上と新規顧客獲得を支援。
@@ -209,62 +195,55 @@
             </div>
         </section>
         
-        <section class="glass-card p-8 mb-12 rounded-2xl">
-            <h2 class="section-title mb-6">キャリアビジョン・実現したいこと</h2>
+        <!-- キャリアビジョンセクション -->
+        <section class="vision-section section-spacing">
+            <h2 class="section-title">キャリアビジョン・実現したいこと</h2>
             
             <div class="vision-container">
                 <div class="vision-item">
-                    <div class="vision-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <div class="vision-content">
+                    <div class="vision-header">
                         <h3 class="vision-title">日本経済の底上げに貢献</h3>
-                        <p class="vision-description">
-                            様々な業界の事務作業を自動化し、生産性向上と働き方改革を支援します。
-                            業種を問わず、単調な作業から人を解放し、創造的な仕事に集中できる環境を整えることで
-                            日本全体の生産性向上に貢献したいと考えています。
-                        </p>
                     </div>
+                    <p class="vision-description">
+                        様々な業界の事務作業を自動化し、生産性向上と働き方改革を支援します。
+                        業種を問わず、単調な作業から人を解放し、創造的な仕事に集中できる環境を整えることで
+                        日本全体の生産性向上に貢献したいと考えています。
+                    </p>
                 </div>
                 
                 <div class="vision-item">
-                    <div class="vision-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <div class="vision-content">
+                    <div class="vision-header">
                         <h3 class="vision-title">デジタル人材の育成</h3>
-                        <p class="vision-description">
-                            一緒に働く人が最新技術を身につけられるよう、使いやすいツール開発と技術共有を行います。
-                            エンジニアでない方でも簡単に使えるシステムを構築し、全社員がデジタルツールを
-                            活用できる環境を作ります。
-                        </p>
                     </div>
+                    <p class="vision-description">
+                        一緒に働く人が最新技術を身につけられるよう、使いやすいツール開発と技術共有を行います。
+                        エンジニアでない方でも簡単に使えるシステムを構築し、全社員がデジタルツールを
+                        活用できる環境を作ります。
+                    </p>
                 </div>
                 
                 <div class="vision-item">
-                    <div class="vision-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="vision-content">
+                    <div class="vision-header">
                         <h3 class="vision-title">AIと人間の共存モデル構築</h3>
-                        <p class="vision-description">
-                            AIを活用しながらも、人間らしい創造性や判断を活かせるワークフローの確立を目指します。
-                            AIに任せるべき業務と人間にしかできない業務を適切に切り分け、
-                            最適な共存モデルを各企業に合わせて設計します。
-                        </p>
                     </div>
+                    <p class="vision-description">
+                        AIを活用しながらも、人間らしい創造性や判断を活かせるワークフローの確立を目指します。
+                        AIに任せるべき業務と人間にしかできない業務を適切に切り分け、
+                        最適な共存モデルを各企業に合わせて設計します。
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="glass-card p-8 rounded-2xl">
-            <h2 class="section-title mb-8">エンジニア向けスキルセット</h2>
+        <!-- スキルセットセクション -->
+        <section class="skills-section section-spacing">
+            <h2 class="section-title">エンジニア向けスキルセット</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="skills-grid">
                 <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-code mr-2"></i>言語・フレームワーク
-                    </h3>
+                    <div class="skill-header">
+                        <h3 class="skill-title">言語・フレームワーク</h3>
+                    </div>
                     <ul class="skill-list">
                         <li><span class="skill-highlight">Python:</span> Selenium, BeautifulSoup, Flask, FastAPI, Flet, pandas</li>
                         <li><span class="skill-highlight">JavaScript/TypeScript:</span> React基礎, Node.js基礎</li>
@@ -274,9 +253,9 @@
                 </div>
                 
                 <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-share-alt mr-2"></i>API連携・SNS統合
-                    </h3>
+                    <div class="skill-header">
+                        <h3 class="skill-title">API連携・SNS統合</h3>
+                    </div>
                     <ul class="skill-list">
                         <li><span class="skill-highlight">SNS API:</span> Twitter API, Instagram Graph API, TikTok API</li>
                         <li><span class="skill-highlight">LINE連携:</span> Messaging API, LINE Login, LINE Mini App</li>
@@ -285,9 +264,9 @@
                 </div>
                 
                 <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-brain mr-2"></i>AI・機械学習
-                    </h3>
+                    <div class="skill-header">
+                        <h3 class="skill-title">AI・機械学習</h3>
+                    </div>
                     <ul class="skill-list">
                         <li><span class="skill-highlight">API連携:</span> OpenAI (GPT-4, DALL-E), Anthropic Claude, Google Gemini, DeepSeek</li>
                         <li><span class="skill-highlight">音声処理:</span> STT (Speech-to-Text), TTS (Text-to-Speech), Whisper API</li>
@@ -297,9 +276,9 @@
                 </div>
                 
                 <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-paint-brush mr-2"></i>デザイン・UI/UX
-                    </h3>
+                    <div class="skill-header">
+                        <h3 class="skill-title">デザイン・UI/UX</h3>
+                    </div>
                     <ul class="skill-list">
                         <li><span class="skill-highlight">デザインツール:</span> Adobe Illustrator, Photoshop</li>
                         <li><span class="skill-highlight">UI設計:</span> モバイルファースト設計, アクセシビリティ対応</li>
@@ -308,9 +287,9 @@
                 </div>
                 
                 <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-shopping-cart mr-2"></i>Web開発・EC連携
-                    </h3>
+                    <div class="skill-header">
+                        <h3 class="skill-title">Web開発・EC連携</h3>
+                    </div>
                     <ul class="skill-list">
                         <li><span class="skill-highlight">Webスクレイピング:</span> 高度なセレクタ操作, 認証サイト対応, 動的コンテンツ取得</li>
                         <li><span class="skill-highlight">決済システム:</span> Komoju, Stripe, PayPal, コンビニ払い, キャリア決済など各種決済モジュール連携</li>
@@ -318,9 +297,9 @@
                 </div>
                 
                 <div class="skill-category">
-                    <h3 class="skill-category-title">
-                        <i class="fas fa-server mr-2"></i>インフラ・クラウド
-                    </h3>
+                    <div class="skill-header">
+                        <h3 class="skill-title">インフラ・クラウド</h3>
+                    </div>
                     <ul class="skill-list">
                         <li><span class="skill-highlight">クラウドサービス:</span> AWS Lightsail, Render, Oracle Cloud</li>
                         <li><span class="skill-highlight">バージョン管理:</span> Git, GitHub Actions</li>
@@ -329,37 +308,16 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer class="py-8 text-center">
-        <div class="container mx-auto">
-            <p>© 2025 尾崎 文政 | 最終更新: <span id="last-updated"></span></p>
-            <p class="mt-2 text-sm">
-                <a href="#" class="text-indigo-300 hover:text-indigo-100 transition duration-300">PDFをダウンロード</a>
-            </p>
+        <!-- CTAセクション -->
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2025 尾崎 文政 | 最終更新: <span id="last-updated"></span></p>
         </div>
     </footer>
 
-    <script>
-        // タイピングアニメーション
-        const typed = new Typed('#typewriter', {
-            strings: [
-                'AIを活用した業務自動化',
-                'チャットボット・LINE連携開発',
-                'SNS API活用・データ分析',
-                'デザイン・ブランディング',
-                '画像・音声・動画の解析と生成',
-                'Webスクレイピング・情報収集'
-            ],
-            typeSpeed: 50,
-            backSpeed: 20,
-            backDelay: 1500,
-            startDelay: 500,
-            loop: true
-        });
-
-        // 最終更新日
-        document.getElementById('last-updated').textContent = new Date().toLocaleDateString('ja-JP');
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
