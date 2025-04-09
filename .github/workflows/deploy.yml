@@ -1,0 +1,23 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main, master ] # mainまたはmasterブランチへのプッシュで実行
+  workflow_dispatch: # 手動実行も可能
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # GitHubページデプロイ用のブランチ
+          folder: . # デプロイするフォルダ
+          clean: true # 古いファイルをクリアする
+          token: ${{ secrets.GITHUB_TOKEN }} # GitHub提供のトークン
