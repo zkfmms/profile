@@ -6,8 +6,8 @@
 }
 
 :root {
-    --primary-color: #0d6efd;
-    --primary-light: #6ea8fe;
+    --primary-color: rgb(253, 13, 81);
+    --primary-light: rgb(253, 129, 13);
     --primary-dark: #0a58ca;
     --secondary-color: #6c757d;
     --light-color: #f8f9fa;
@@ -203,14 +203,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .typewriter-prefix {
     font-size: 1.3rem;
-    color: var(--primary-color);
+    color: var(--dark-color);
     font-weight: 600;
     margin-right: 0.5rem;
 }
 
 .typewriter-text {
     font-size: 1.3rem;
-    color: var(--dark-color);
+    color: var(--primary-color);
+    font-weight: 600;
     min-height: 1.6em;
 }
 
