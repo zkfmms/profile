@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 名前と英語名のスタイル */
 .profile-name {
-    font-size: 1.5rem; /* サイズを小さく調整 */
+    font-size: 1.2rem; /* サイズを小さく調整 */
     font-weight: 700;
     display: inline-block;
     margin-right: 0.5rem;
@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+    padding: 1.2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -210,12 +210,12 @@ h1, h2, h3, h4, h5, h6 {
 .card-header {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     gap: 1rem;
 }
 
 .card-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--primary-color);
     background-color: var(--primary-light);
     width: 3rem;
@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--dark-color);
 }
 
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 .card-list li {
     margin-bottom: 1rem;
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.2rem;
 }
 
 .card-list li::before {
@@ -275,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
     resize: none;
     font-family: inherit;
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     transition: border-color 0.3s ease;
 }
 
@@ -291,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     border: none;
     border-radius: 8px;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.2rem;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -306,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2rem;
     background-color: white;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1.2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     background-color: var(--primary-color);
     width: 3rem;
@@ -377,14 +377,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timeline-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--dark-color);
 }
 
 .timeline-content {
     background-color: white;
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 1.2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
     margin-left: 2rem;
 }
@@ -407,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
 .timeline-list li {
     margin-bottom: 0.75rem;
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.2rem;
 }
 
 .timeline-list li::before {
@@ -426,7 +426,7 @@ h1, h2, h3, h4, h5, h6 {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+    padding: 1.2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
 }
@@ -439,12 +439,12 @@ h1, h2, h3, h4, h5, h6 {
 .project-header {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     gap: 1rem;
 }
 
 .project-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     background-color: var(--success-color);
     width: 3rem;
@@ -457,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--dark-color);
 }
 
@@ -479,7 +479,7 @@ h1, h2, h3, h4, h5, h6 {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+    padding: 1.2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -491,12 +491,12 @@ h1, h2, h3, h4, h5, h6 {
 .vision-header {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     gap: 1rem;
 }
 
 .vision-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     background-color: var(--accent-color);
     width: 3rem;
@@ -509,7 +509,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .vision-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--dark-color);
 }
 
@@ -529,7 +529,7 @@ h1, h2, h3, h4, h5, h6 {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+    padding: 1.2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -541,12 +541,12 @@ h1, h2, h3, h4, h5, h6 {
 .skill-header {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     gap: 1rem;
 }
 
 .skill-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     background-color: var(--secondary-color);
     width: 3rem;
@@ -559,7 +559,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--dark-color);
 }
 
