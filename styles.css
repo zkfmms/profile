@@ -30,9 +30,15 @@ html {
     font-size: 16px;
     scroll-behavior: smooth;
 }
+@font-face {
+    font-family: 'HannariMincho';
+    src: url('./font/HannariMincho-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
-    font-family: "Courier New", "Osaka-Mono", "MS Gothic", monospace; /* 和文等幅フォント */
+    font-family: 'HannariMincho', monospace; /* 和文等幅フォント */
     line-height: 1.8; /* 行間を少し広げる */
     color: var(--dark-color);
     background-color: var(--light-color);
@@ -54,8 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-spacing {
-    margin-bottom: var(--section-spacing);
-}
+    margin-bottom: 90px; /* 60pxの余白 */}
 
 /* セクションタイトル */
 .section-title {
@@ -70,13 +75,9 @@ h1, h2, h3, h4, h5, h6 {
 .section-title::after {
     content: '';
     position: absolute;
-    bottom: -1rem;
+    margin-bottom: 6rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 5rem;
-    height: 4px;
-    background-color: var(--primary-color);
-    border-radius: 2px;
 }
 
 .section-description {
@@ -94,16 +95,18 @@ h1, h2, h3, h4, h5, h6 {
 /* ヘッダーセクション */
 .header-section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* 子要素を縦に並べる */
+    align-items: center; /* 中央揃え */
+    justify-content: center; /* 縦方向の中央揃え */
+    text-align: center; /* テキストを中央揃え */
     padding: 3rem 0;
-    flex-wrap: wrap;
 }
 
 .profile-container {
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    flex-direction: column; /* 子要素を縦に並べる */
+    align-items: center; /* 中央揃え */
+    gap: 1rem; /* 子要素間の間隔 */
 }
 
 .profile-image {
@@ -112,8 +115,12 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--primary-color);
+    margin-bottom: 1rem; /* 画像と名前の間隔 */
 }
 
+.profile-info {
+    text-align: center; /* 名前とタイトルを中央揃え */
+}
 /* 名前と英語名のスタイル */
 .profile-name {
     font-size: 1.2rem; /* サイズを小さく調整 */
@@ -133,6 +140,26 @@ h1, h2, h3, h4, h5, h6 {
 .profile-title {
     color: var(--gray-600);
     font-size: 1.1rem;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column; /* 子要素を縦に並べる */
+    align-items: center; /* 中央揃え */
+    gap: 1rem; /* 子要素間の間隔 */
+}
+
+.profile-image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    margin-bottom: 1rem; /* 画像と名前の間隔 */
+}
+
+.profile-info {
+    text-align: center; /* 名前とタイトルを中央揃え */
 }
 
 .social-links {
@@ -164,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem 0;
     margin-bottom: 3rem;
     background-color: var(--gray-100);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .typewriter-container {
@@ -285,23 +312,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ask-button {
-    display: block;
-    margin-left: auto;
-    background-color: var(--primary-color);
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--light-color);
+    border-radius: 50%;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
     border: none;
-    border-radius: 8px;
-    padding: 0.75rem 1.2rem;
-    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.ask-button i {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
 
 .ask-button:hover {
-    background-color: var(--primary-dark);
     transform: translateY(-3px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15), -10px -10px 20px rgba(255, 255, 255, 0.8);
 }
-
 .answer-container {
     margin-top: 2rem;
     background-color: white;
