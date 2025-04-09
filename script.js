@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         try {
             // Google Apps Scriptを呼び出してAI応答を取得
-            const scriptUrl = 'https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec';
+            const scriptUrl = 'https://script.google.com/macros/s/AKfycbxlvt3GmjSkuNPlZxdMrWQxfOoJop0FUAWQbdXrpSdt8uDTFOyRCl7ZH3nRhy7-0tTn/exec';
             
             const response = await fetch(scriptUrl, {
                 method: 'POST',
