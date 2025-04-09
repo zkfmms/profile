@@ -1,383 +1,684 @@
-/* Twilight テーマ - 尾崎文政の職務経歴書 */
+/* リセット & 基本設定 */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-/* フォント設定 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap');
+:root {
+    --primary-color: #0d6efd;
+    --primary-light: #6ea8fe;
+    --primary-dark: #0a58ca;
+    --secondary-color: #6c757d;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+    --accent-color: #fd7e14;
+    --success-color: #198754;
+    --section-spacing: 6rem;
+}
 
-/* 基本設定 */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
+    font-family: "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+    line-height: 2; /* 行間を広くする */
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    font-feature-settings: "palt"; /* プロポーショナルフォントを有効化 */
 }
 
-.vision-icon {
-    flex-shrink: 0;
-    width: 50px;
-    height: 50px;
-    background: rgba(99, 102, 241, 0.2);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary);
-    font-size: 1.2rem;
-    border: 1px solid var(--primary-light);
-}
-
-.vision-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--accent-light);
-    margin-bottom: 0.5rem;
-}
-
-.vision-description {
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-/* スキルセクション */
-.skill-category {
-    margin-bottom: 2rem;
-}
-
-.skill-category-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--primary-light);
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.skill-list {
-    list-style: none;
-    padding-left: 0.5rem;
-}
-
-.skill-list li {
-    margin-bottom: 0.75rem;
-    position: relative;
-    padding-left: 1rem;
-}
-
-.skill-list li::before {
-    content: '▹';
-    position: absolute;
-    left: -0.5rem;
-    color: var(--accent);
-}
-
-.skill-highlight {
-    color: var(--primary-light);
-    font-weight: 500;
-}
-
-/* SNSアイコン */
-.social-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(99, 102, 241, 0.2);
-    border-radius: 50%;
-    color: var(--primary-light);
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-}
-
-.social-icon:hover {
-    background: var(--primary);
-    color: var(--dark);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
-}
-
-/* タイプライターエフェクト */
-.typewriter-container {
-    height: 2rem;
-    margin-top: 1rem;
-}
-
-.typewriter-prefix {
-    opacity: 0.8;
-}
-
-/* ホバーエフェクト */
-.hover-effect {
-    transition: all 0.3s ease;
-}
-
-.hover-effect:hover {
-    transform: translateY(-3px);
-}
-
-/* レスポンシブ調整 */
-@media (max-width: 768px) {
-    .timeline {
-        padding-left: 1.5rem;
-    }
-    
-    .timeline-dot {
-        left: -2rem;
-        width: 30px;
-        height: 30px;
-        font-size: 0.8rem;
-    }
-    
-    .vision-item {
-        flex-direction: column;
-    }
-    
-    .vision-icon {
-        margin-bottom: 1rem;
-    }
-}
-
-/* アニメーション */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.glass-card {
-    animation: fadeIn 0.6s ease forwards;
-}
-
-.glass-card:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.glass-card:nth-child(3) {
-    animation-delay: 0.4s;
-}
-
-.glass-card:nth-child(4) {
-    animation-delay: 0.6s;
-}
-
-/* スクロールバースタイル */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--dark);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--primary);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--accent);
-}
-
-/* コードブロック用スタイル (エンジニア向け) */
-code {
-    font-family: 'JetBrains Mono', monospace;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 0.1em 0.3em;
-    border-radius: 3px;
-    font-size: 0.9em;
-    color: var(--accent-light);
-}
-
-/* Twilight テーマの基本カラー */
-.twilight-theme {
-    --primary: #9e86ff;
-    --primary-light: #b8a3ff;
-    --secondary: #7e52ff;
-    --accent: #ff71ce;
-    --accent-light: #ff9ee5;
-    --dark: #0f1123;
-    --card-bg: rgba(17, 24, 39, 0.8);
-    --card-border: rgba(99, 102, 241, 0.2);
-}
-
-/* ネオンのテキストグラデーション */
-.text-gradient {
-    background: linear-gradient(to right, var(--primary), var(--accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-
-/* ガラスモーフィズム効果のカード */
-.glass-card {
-    background: var(--card-bg);
-    backdrop-filter: blur(16px);
-    border: 1px solid var(--card-border);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.glass-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(82, 0, 255, 0.15);
-}
-
-/* セクションタイトル */
-.section-title {
-    font-size: 1.8rem;
+/* 見出し要素は等幅に戻す（デザイン的に整える） */
+h1, h2, h3, h4, h5, h6 {
+    font-feature-settings: normal;
+    line-height: 1.2; /* 見出しの行間は詰める */
+    letter-spacing: -0.02em; /* 少し字詰め */
     font-weight: 700;
-    background: linear-gradient(to right, var(--primary), var(--accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-spacing {
+    margin-bottom: var(--section-spacing);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
     position: relative;
-    display: inline-block;
-    margin-bottom: 1.5rem;
+    color: var(--dark-color);
 }
 
 .section-title::after {
     content: '';
     position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to right, var(--primary), var(--accent));
-    border-radius: 3px;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
 }
 
-/* 値リスト */
-.value-list {
-    list-style: none;
-    padding-left: 1.2rem;
-}
-
-.value-list li {
-    position: relative;
-    margin-bottom: 1rem;
-    padding-left: 1rem;
-}
-
-.value-list li::before {
-    content: '•';
-    position: absolute;
-    left: -1rem;
-    color: var(--primary);
+.section-description {
+    text-align: center;
     font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: var(--gray-600);
 }
 
-.value-list li strong {
-    color: var(--primary-light);
-    font-weight: 500;
+.hidden {
+    display: none;
 }
 
-/* タイムラインスタイル */
-.timeline {
-    position: relative;
-    margin: 2rem 0;
-    padding-left: 2rem;
+/* ヘッダーセクション */
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    flex-wrap: wrap;
 }
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background: linear-gradient(to bottom, var(--primary), rgba(99, 102, 241, 0.1));
-}
-
-.timeline-item {
-    position: relative;
-    padding-bottom: 2.5rem;
-}
-
-.timeline-dot {
-    position: absolute;
-    left: -2.5rem;
-    width: 40px;
-    height: 40px;
-    background: var(--dark);
-    border: 2px solid var(--primary);
-    border-radius: 50%;
+.profile-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: var(--primary);
-    font-size: 1rem;
-    box-shadow: 0 0 10px rgba(157, 134, 255, 0.5);
+    gap: 2rem;
 }
 
-.timeline-content {
-    padding-left: 1rem;
-    margin-bottom: 1.5rem;
+.profile-image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
 }
 
-.timeline-date {
-    font-size: 0.9rem;
-    color: var(--accent-light);
-    margin-bottom: 0.75rem;
-    font-weight: 500;
+.profile-name {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
 }
 
-.timeline-details {
-    list-style: none;
-    padding-left: 0;
-}
-
-.timeline-details li {
-    position: relative;
-    padding-left: 1.5rem;
+.profile-en-name {
+    font-size: 1.5rem;
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
-.timeline-details li::before {
-    content: '→';
+.profile-title {
+    color: var(--gray-600);
+    font-size: 1.1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+/* タイプライターセクション */
+.typewriter-section {
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+    background-color: var(--gray-100);
+    border-radius: 10px;
+}
+
+.typewriter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.typewriter-prefix {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.typewriter-text {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    min-height: 1.6em;
+}
+
+/* カードグリッド */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: var(--primary-light);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+.card-list {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.card-list li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.card-list li::before {
+    content: '';
     position: absolute;
     left: 0;
-    color: var(--primary);
+    top: 0.8rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+/* Ask Me セクション */
+.ask-section {
+    background-color: var(--gray-100);
+    padding: 4rem 2rem;
+    border-radius: 10px;
+}
+
+.ask-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ask-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    border: 2px solid var(--gray-300);
+    border-radius: 8px;
+    resize: none;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.ask-textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.ask-button {
+    display: block;
+    margin-left: auto;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ask-button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+.answer-container {
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.answer-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.answer-icon {
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--primary-color);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.answer-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.answer-text {
+    color: var(--gray-700);
+    line-height: 1.8;
+}
+
+/* タイムライン */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.timeline-icon {
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--primary-color);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.timeline-title {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+.timeline-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-left: 2rem;
+}
+
+.timeline-date {
+    display: inline-block;
+    background-color: var(--gray-200);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--gray-700);
+    margin-bottom: 1rem;
+}
+
+.timeline-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.timeline-list li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.timeline-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.8rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
 }
 
 /* プロジェクトカード */
 .project-card {
-    background: rgba(30, 30, 46, 0.5);
-    border: 1px solid rgba(99, 102, 241, 0.2);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
-    border-radius: 1rem;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
 }
 
 .project-icon {
-    font-size: 1.8rem;
-    color: var(--primary);
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--success-color);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 
 .project-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--accent-light);
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--dark-color);
 }
 
 .project-description {
-    font-size: 0.95rem;
-    line-height: 1.5;
+    color: var(--gray-700);
+    line-height: 1.8;
 }
 
 /* ビジョンセクション */
 .vision-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .vision-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vision-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.vision-header {
     display: flex;
-    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.vision-icon {
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--accent-color);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.vision-title {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+.vision-description {
+    color: var(--gray-700);
+    line-height: 1.8;
+}
+
+/* スキルセクション */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--secondary-color);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.skill-title {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+.skill-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill-list li {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.skill-list li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.skill-highlight {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+/* CTAセクション */
+.cta-section {
+    text-align: center;
+    background-color: var(--gray-100);
+    padding: 4rem 2rem;
+    border-radius: 10px;
+}
+
+.cta-description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: var(--gray-600);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+/* フッター */
+.footer {
+    padding: 3rem 0;
+    background-color: var(--gray-800);
+    color: white;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 1rem;
+}
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 992px) {
+    .card-grid, .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    
+    .social-links {
+        align-self: center;
+    }
+    
+    .card-grid, .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-name {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .card-header, .project-header, .vision-header, .skill-header, .timeline-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .timeline-content {
+        margin-left: 0;
+    }
 }
