@@ -32,19 +32,19 @@ html {
 }
 
 body {
-    font-family: "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Meiryo, sans-serif;
-    line-height: 2; /* 行間を広くする */
+    font-family: "Courier New", "Osaka-Mono", "MS Gothic", monospace; /* 和文等幅フォント */
+    line-height: 1.8; /* 行間を少し広げる */
     color: var(--dark-color);
     background-color: var(--light-color);
-    font-feature-settings: "palt"; /* プロポーショナルフォントを有効化 */
 }
 
-/* 見出し要素は等幅に戻す（デザイン的に整える） */
+/* 見出しのスタイル */
 h1, h2, h3, h4, h5, h6 {
-    font-feature-settings: normal;
-    line-height: 1.2; /* 見出しの行間は詰める */
-    letter-spacing: -0.02em; /* 少し字詰め */
+    font-size: 1.2rem; /* 本文より少し大きい */
     font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
 }
 
 .container {
@@ -57,10 +57,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: var(--section-spacing);
 }
 
+/* セクションタイトル */
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 1.2rem; /* 本文より少し大きい */
+    font-weight: 700;
+    margin-bottom: 2rem;
     position: relative;
     color: var(--dark-color);
 }
@@ -112,16 +114,20 @@ h1, h2, h3, h4, h5, h6 {
     border: 3px solid var(--primary-color);
 }
 
+/* 名前と英語名のスタイル */
 .profile-name {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem; /* サイズを小さく調整 */
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 0.5rem;
     color: var(--dark-color);
 }
 
 .profile-en-name {
-    font-size: 1.5rem;
+    font-size: 1rem; /* 英語名はさらに小さく */
+    font-weight: 400;
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    display: inline-block;
 }
 
 .profile-title {
@@ -389,7 +395,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.9rem;
-    color: var(--gray-700);
+    color: var (--gray-700);
     margin-bottom: 1rem;
 }
 
