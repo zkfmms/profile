@@ -138,8 +138,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-title {
-    color: var(--gray-600);
-    font-size: 1.1rem;
+    color: var(--gray-800);
+    font-size: 0.9rem;
 }
 
 .profile-container {
