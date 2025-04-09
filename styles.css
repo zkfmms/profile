@@ -719,4 +719,15 @@ h1, h2, h3, h4, h5, h6 {
     .timeline-content {
         margin-left: 0;
     }
+
+    .header-section {
+        align-items: center; /* 中央揃えを維持 */
+        text-align: center; /* テキストを中央揃え */
+    }
+
+    .profile-container {
+        flex-direction: column; /* 子要素を縦に並べる */
+        align-items: center; /* 中央揃え */
+        text-align: center; /* テキストを中央揃え */
+    }
 }
