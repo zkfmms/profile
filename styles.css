@@ -30,24 +30,18 @@ html {
     font-size: 16px;
     scroll-behavior: smooth;
 }
-@font-face {
-    font-family: 'HannariMincho';
-    src: url('./font/HannariMincho-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 body {
-    font-family: 'HannariMincho', monospace; /* 和文等幅フォント */
-    line-height: 1.8; /* 行間を少し広げる */
+    font-family: 'M PLUS 1', sans-serif;
+    line-height: 1.8;
     color: var(--dark-color);
     background-color: var(--light-color);
 }
 
-/* 見出しのスタイル */
+/* 見出しのスタイルを変更 */
 h1, h2, h3, h4, h5, h6 {
-    font-size: 1.2rem; /* 本文より少し大きい */
-    font-weight: 700;
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: 700; /* ウェイトを大きく設定 */
     line-height: 1.4;
     margin-bottom: 1rem;
     color: var(--dark-color);
