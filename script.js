@@ -48,37 +48,4 @@ document.addEventListener('DOMContentLoaded', function() {
     fadeInOnScroll();
     
     // Ask Me ボタンのイベントリスナー
-    document.getElementById('ask-button').addEventListener('click', async function() {
-        const question = document.getElementById('user-question').value.trim();
-        if (!question) return;
-        
-        // Loading状態の表示
-        const answerContainer = document.getElementById('answer-container');
-        const answerText = document.getElementById('answer-text');
-        answerContainer.classList.remove('hidden');
-        answerText.innerHTML = '<div class="loader"></div>';
-        
-        try {
-            // Google Apps Scriptを呼び出してAI応答を取得
-            const scriptUrl = 'https://script.google.com/macros/s/AKfycbxlvt3GmjSkuNPlZxdMrWQxfOoJop0FUAWQbdXrpSdt8uDTFOyRCl7ZH3nRhy7-0tTn/exec';
-            
-            const response = await fetch(scriptUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ question: question })
-            });
-            
-            if (response.ok) {
-                const data = await response.json();
-                answerText.textContent = data.response;
-            } else {
-                throw new Error('応答の取得に失敗しました');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            answerText.textContent = "申し訳ありません。ただいま応答システムがメンテナンス中です。直接メールでお問い合わせいただくか、後ほど再度お試しください。";
-        }
-    });
 });
