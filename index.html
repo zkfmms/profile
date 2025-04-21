@@ -20,7 +20,6 @@
                     <h1 class="profile-name">尾崎 文政</h1>
                     <span class="profile-en-name">Fumimasa Ozaki</span>
                     <p class="profile-title">📊 日本のバックオフィスの課題解決を解決したい、<br>起業家・プログラマー・デザイナー・動画編集者</p>
-                    <p class="profile-title">🏢 株式会社伝家 代表取締役</p>
                 </div>
             </div>
         </header>
@@ -78,6 +77,17 @@
                         <li>業務効率化のための自動化ツール開発</li>
                         <li>API連携によるシステム構築</li>
                         <li>Webスクレイピングによるデータ収集</li>
+                    </ul>
+                </div>
+                <div class="card one-person-card">
+                    <div class="card-header">
+                        <h3 class="card-title">📈 ビジネス支援・計画</h3>
+                    </div>
+                    <ul class="card-list">
+                        <li>IT補助金・小規模持続化補助金の申請サポート</li>
+                        <li>投資家向けプレゼンテーション資料作成支援</li>
+                        <li>BS/PL（財務諸表）作成サポート</li>
+                        <li>データに基づいた事業計画案の策定支援</li>
                     </ul>
                 </div>
             </div>
@@ -297,41 +307,46 @@
                 <div class="card-grid">
                     <div class="project-card">
                         <div class="project-header">
-                            <h3 class="project-title">全自動ランディングページ生成システム</h3>
+                            <h3 class="project-title">多言語対応・動画字幕自動生成ツール「Transcap」</h3>
                         </div>
                         <p class="project-description">
-                            企業情報を入力するだけで、営業に特化した魅力的なランディングページを自動生成。
-                            デザインとコーディングの工数を大幅に削減しながら、高品質なウェブページを短時間で実現します。
+                            動画をアップロードするだけで、AIが自動で文字起こし・翻訳・字幕付き動画（ショート含む）を生成。インバウンド対策やコンテンツのグローバル展開を支援。（5/1リリース予定）
                         </p>
                     </div>
 
                     <div class="project-card">
                         <div class="project-header">
-                            <h3 class="project-title">インバウンド向けSNSリール動画自動作成ツール</h3>
+                            <h3 class="project-title">AI×遺伝的アルゴリズム活用 シフト最適化システム</h3>
                         </div>
                         <p class="project-description">
-                            日本の魅力を世界に伝える多言語対応の短尺動画を自動生成。
-                            外国人観光客の興味を引き、効果的な情報発信を支援するツールです。
+                            会話履歴等の情報から、複雑な条件を考慮した最適なシフトを自動生成。AIによる初期解生成と遺伝的アルゴリズムによる最適化を組み合わせた研究開発プロジェクト。（研究中）
                         </p>
                     </div>
 
                     <div class="project-card">
                         <div class="project-header">
-                            <h3 class="project-title">📩AI自動返信メールシステム</h3>
+                            <h3 class="project-title">オフライン会議向け LINE議事録作成ミニアプリ「LINEMINUTES」</h3>
                         </div>
                         <p class="project-description">
-                            問い合わせ内容を高度に分析し、最適で温かみのある返信を自動生成。
-                            対応漏れゼロ・応答時間の劇的な短縮を実現します。
+                            録音した会議音声をLINEからアップロードするだけで、AIが文字起こしと議事録要約を自動作成。オフラインでの情報共有を効率化。（開発中）
                         </p>
                     </div>
 
                     <div class="project-card">
                         <div class="project-header">
-                            <h3 class="project-title">店舗活性化サービス「チアーズガール」</h3>
+                            <h3 class="project-title">テキスト入力だけで動的LPを自動生成するツール</h3>
                         </div>
                         <p class="project-description">
-                            飲食店の閑散時間を活用し、一般女性を派遣することで店舗の雰囲気を活性化。
-                            売上向上と新規顧客獲得を支援するユニークなサービスです。
+                            伝えたい内容を入力するだけで、JavaScriptによるリッチな表現を含む高機能なランディングページHTMLを自動生成。業種特化テンプレートも搭載。（開発中）
+                        </p>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">AI職務経歴書ブラッシュアップ＆PDF生成ツール</h3>
+                        </div>
+                        <p class="project-description">
+                            既存の職務経歴書テキストをAIが分析・改善し、より魅力的で効果的な内容に編集。LaTeXを用いた美しいフォーマットのPDFとして出力。（開発中）
                         </p>
                     </div>
                 </div>
@@ -464,10 +479,48 @@
 
         <footer class="footer">
             <div class="container">
-                <p class="copyright">© 2025 尾崎 文政 | 最終更新: <span id="last-updated"></span></p>
+                <p class="copyright">© 2025 尾崎 文政 | 最終更新: <span id="last-updated">2025-04-21</span></p>
             </div>
         </footer>
 
         <script src="script.js"></script>
+        <script>
+            // 最終更新日を表示する要素を取得
+            const lastUpdatedElement = document.getElementById('last-updated');
+            if (lastUpdatedElement) {
+                // 現在の日付を取得して YYYY-MM-DD 形式にフォーマット
+                const now = new Date();
+                const year = now.getFullYear();
+                const month = String(now.getMonth() + 1).padStart(2, '0'); // 月は0から始まるため+1
+                const day = String(now.getDate()).padStart(2, '0');
+                lastUpdatedElement.textContent = `${year}-${month}-${day}`;
+            }
+
+            // Typed.jsの初期化（script.jsに記述があれば不要）
+            if (typeof Typed !== 'undefined') {
+                 const typed = new Typed('#typewriter', {
+                    strings: [
+                        'バックオフィス業務の自動化',
+                        'ウェブサイト・LP制作',
+                        'デザイン（ロゴ、パンフ）',
+                        '動画編集・制作',
+                        '補助金申請サポート',
+                        '事業計画策定支援'
+                        // 他にも追加可能
+                    ],
+                    typeSpeed: 50,
+                    backSpeed: 30,
+                    backDelay: 1500,
+                    loop: true
+                });
+            } else {
+                console.error('Typed.jsが見つかりません。script.jsを確認してください。');
+                // Typed.jsがない場合の代替テキスト表示
+                const typewriterElement = document.getElementById('typewriter');
+                if (typewriterElement) {
+                    typewriterElement.textContent = 'バックオフィス業務の自動化、ウェブ制作、デザイン、動画編集など';
+                }
+            }
+        </script>
     </body>
     </html>
