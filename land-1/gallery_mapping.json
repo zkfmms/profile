@@ -8,6 +8,62 @@
       "orientation": "portrait"
     },
     {
+      "original_filename": "２、1975。.jpg",
+      "new_filename": "2.jpg",
+      "title": "1975。",
+      "status": "Renamed",
+      "orientation": "landscape"
+    },
+    {
+      "original_filename": "３、ムシ！！！！(いちおくにせんまんぐらいのぱわーで。).jpg",
+      "new_filename": "3.jpg",
+      "title": "ムシ！！！！(いちおくにせんまんぐらいのぱわーで。)",
+      "status": "Renamed",
+      "orientation": "landscape"
+    },
+    {
+      "original_filename": "４、みんなで一緒に宇宙へ行こう。.jpg",
+      "new_filename": "4.jpg",
+      "title": "みんなで一緒に宇宙へ行こう。",
+      "status": "Renamed",
+      "orientation": "landscape"
+    },
+    {
+      "original_filename": "５、いちばんカッコいいギタの肖像。.jpg",
+      "new_filename": "5.jpg",
+      "title": "いちばんカッコいいギタの肖像。",
+      "status": "Renamed",
+      "orientation": "portrait"
+    },
+    {
+      "original_filename": "６、いちばん優しいティカの肖像。.jpg",
+      "new_filename": "6.jpg",
+      "title": "いちばん優しいティカの肖像。",
+      "status": "Renamed",
+      "orientation": "portrait"
+    },
+    {
+      "original_filename": "７、いちばん可愛いアニサの肖像。.jpg",
+      "new_filename": "7.jpg",
+      "title": "いちばん可愛いアニサの肖像。",
+      "status": "Renamed",
+      "orientation": "portrait"
+    },
+    {
+      "original_filename": "８、一番心が温かいハサの肖像。.jpg",
+      "new_filename": "8.jpg",
+      "title": "一番心が温かいハサの肖像。",
+      "status": "Renamed",
+      "orientation": "portrait"
+    },
+    {
+      "original_filename": "９、歩く男。.jpg",
+      "new_filename": "9.jpg",
+      "title": "歩く男。",
+      "status": "Renamed",
+      "orientation": "portrait"
+    },
+    {
       "original_filename": "１０、愛ノ壁ヲブチ壊セ。.jpg",
       "new_filename": "10.jpg",
       "title": "愛ノ壁ヲブチ壊セ。",
@@ -76,13 +132,6 @@
       "title": "ボクの愛染明王。",
       "status": "Renamed",
       "orientation": "portrait"
-    },
-    {
-      "original_filename": "２、1975。.jpg",
-      "new_filename": "2.jpg",
-      "title": "1975。",
-      "status": "Renamed",
-      "orientation": "landscape"
     },
     {
       "original_filename": "２０、ワタシの不動明王。.jpg",
@@ -155,13 +204,6 @@
       "orientation": "portrait"
     },
     {
-      "original_filename": "３、ムシ！！！！(いちおくにせんまんぐらいのぱわーで。).jpg",
-      "new_filename": "3.jpg",
-      "title": "ムシ！！！！(いちおくにせんまんぐらいのぱわーで。)",
-      "status": "Renamed",
-      "orientation": "landscape"
-    },
-    {
       "original_filename": "３０、出発点！ m(凸凹)m  触る、つまむ、愛でる。.jpg",
       "new_filename": "30.jpg",
       "title": "出発点！ m(凸凹)m  触る、つまむ、愛でる。",
@@ -200,48 +242,6 @@
       "original_filename": "３５、ながいらんど.jpg",
       "new_filename": "35.jpg",
       "title": "ながいらんど",
-      "status": "Renamed",
-      "orientation": "portrait"
-    },
-    {
-      "original_filename": "４、みんなで一緒に宇宙へ行こう。.jpg",
-      "new_filename": "4.jpg",
-      "title": "みんなで一緒に宇宙へ行こう。",
-      "status": "Renamed",
-      "orientation": "landscape"
-    },
-    {
-      "original_filename": "５、いちばんカッコいいギタの肖像。.jpg",
-      "new_filename": "5.jpg",
-      "title": "いちばんカッコいいギタの肖像。",
-      "status": "Renamed",
-      "orientation": "portrait"
-    },
-    {
-      "original_filename": "６、いちばん優しいティカの肖像。.jpg",
-      "new_filename": "6.jpg",
-      "title": "いちばん優しいティカの肖像。",
-      "status": "Renamed",
-      "orientation": "portrait"
-    },
-    {
-      "original_filename": "７、いちばん可愛いアニサの肖像。.jpg",
-      "new_filename": "7.jpg",
-      "title": "いちばん可愛いアニサの肖像。",
-      "status": "Renamed",
-      "orientation": "portrait"
-    },
-    {
-      "original_filename": "８、一番心が温かいハサの肖像。.jpg",
-      "new_filename": "8.jpg",
-      "title": "一番心が温かいハサの肖像。",
-      "status": "Renamed",
-      "orientation": "portrait"
-    },
-    {
-      "original_filename": "９、歩く男。.jpg",
-      "new_filename": "9.jpg",
-      "title": "歩く男。",
       "status": "Renamed",
       "orientation": "portrait"
     }
