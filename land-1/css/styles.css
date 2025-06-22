@@ -1,4 +1,4 @@
- @charset "utf-8";
+@charset "utf-8";
 /* CSS Document */
 
 /*------------------------------------------------------------------
@@ -283,62 +283,41 @@ img { width:100%; display: block; max-width: 100%; z-index:9; -webkit-box-shadow
 .images { display:block; position:relative; opacity:1; }
 a:hover .images { opacity:0.6; }
 
-.background-image1 { background:url(../images/1.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image2 { background:url(../images/9.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image3 { background:url(../images/2.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image4 { background:url(../images/8.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image5 { background:url(../images/4.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image6 { background:url(../images/3.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image7 { background:url(../images/5.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image8 { background:url(../images/6.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image9 { background:url(../images/7.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image10 { background:url(../images/10.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image11 { background:url(../images/photo11b.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image12 { background:url(../images/photo01.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image13 { background:url(../images/about.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-.background-image14 { background:url(../images/photo14b.jpg) no-repeat center; height:100%; display:block; width:100%; -webkit-background-size: 100% auto; -moz-background-size: 100% auto; -o-background-size: 100% auto; background-size: 100% auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;  }
-
-.images.alignleft { width:40%; margin:7px 30px 17px 0; z-index:1; position:relative }
-
-.videos { width:1140px; height:650px; border:0;}
-.videoWrapper { position:relative; padding-bottom:56.25%; /* 16:9 */ height:0; }
-.videoWrapper iframe { position:absolute; top:0; left:0; width:100%; height:100%; }
-
-.musicWrapper { position:relative; height:auto; margin-bottom:-6px; }
-.musicWrapper iframe { width:100%; height:auto; }
-
-.covering-image { position:absolute; left:0; top:0; width:100%; height:100%; border:0; z-index:19; display:block; padding:11%; }
-
-.info-box-content { height:100%; width:100%; }
-.info-box-content .parent { height:100%; width:100%; }
-.info-box-content .child { vertical-align:middle;}
-
-.covering-image p, .covering-image h3, .covering-image h2, .covering-image h4  { color:#fff !important; border-bottom:0px solid rgba(255,255,255,1); margin:4px; opacity:0; }
-/*.covering-image h4::after { content:""; border-bottom:1px solid rgba(255,255,255,1); position:absolute; left:0; bottom:1px; height:1px; width:100%; }*/
-
-.covering-image h4 .underline { background:linear-gradient(#fff,#fff),linear-gradient(#fff,#fff),linear-gradient(#fff,#fff);
- -webkit-background:linear-gradient(#fff,#fff),linear-gradient(#fff,#fff),linear-gradient(#fff,#fff);
-  -o-background:linear-gradient(#fff,#fff),linear-gradient(#fff,#fff),linear-gradient(#fff,#fff);
-   -ms-background:linear-gradient(#fff,#fff),linear-gradient(#fff,#fff),linear-gradient(#fff,#fff);
-background-size:.05em 1px,.05em 1px,1px 1px;background-repeat:no-repeat,no-repeat,repeat-x;background-position:0 90%,90% 90%,0 90% }
-
-.covering-image p.small { border:0; }
-a:hover .covering-image h4 { opacity:1; }
-a:hover .covering-image p { opacity:0.7 !important; }
-
-.left-corner { width:13px; height:13px; position:absolute; left:35px; top:35px; border-left:2px solid rgba(255,255,255,0.7); border-top:2px solid rgba(255,255,255,0.7); display:block; opacity:0; }
-.right-corner { width:13px; height:13px; position:absolute; right:35px; top:35px; border-right:2px solid rgba(255,255,255,0.7); border-top:2px solid rgba(255,255,255,0.7); display:block; opacity:0; }
-.left-corner.bottom { bottom:35px; top:auto; border-bottom:2px solid rgba(255,255,255,0.7); border-top:0; opacity:0; }
-.right-corner.bottom { bottom:35px; top:auto; border-bottom:2px solid rgba(255,255,255,0.7); border-top:0; opacity:0; }
-a:hover .left-corner, a:hover .right-corner, a:hover .left-corner.bottom, a:hover .right-corner.bottom { opacity:1; }
-
-.hidden-content { opacity:0; }
-a:hover .hidden-content { opacity:1; }
-
-.child h1 { line-height:1; margin-top:0; }
-
-.image-caption { position:absolute; right:35px; top:35px; background:#fff; z-index:99; padding:7px 10px; font-family:"Oswald", Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:12px; }
-.image-caption i.fa {position:relative; top:-1px }
+.background-image1 { background:url(../images/1.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image2 { background:url(../images/10.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image3 { background:url(../images/11.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image4 { background:url(../images/12.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image5 { background:url(../images/13.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image6 { background:url(../images/14.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image7 { background:url(../images/15.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image8 { background:url(../images/16.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image9 { background:url(../images/17.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image10 { background:url(../images/18.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image11 { background:url(../images/19.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image12 { background:url(../images/2.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image13 { background:url(../images/20.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image14 { background:url(../images/21.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image15 { background:url(../images/22.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image16 { background:url(../images/23.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image17 { background:url(../images/24.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image18 { background:url(../images/25.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image19 { background:url(../images/26.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image20 { background:url(../images/27.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image21 { background:url(../images/28.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image22 { background:url(../images/29.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image23 { background:url(../images/3.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image24 { background:url(../images/30.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image25 { background:url(../images/31.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image26 { background:url(../images/32.JPG) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image27 { background:url(../images/33.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image28 { background:url(../images/34.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image29 { background:url(../images/35.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image30 { background:url(../images/4.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image31 { background:url(../images/5.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image32 { background:url(../images/6.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image33 { background:url(../images/7.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image34 { background:url(../images/8.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image35 { background:url(../images/9.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
 /* End Images
 --------------------------------------------------------------------------------------------------------*/
 
