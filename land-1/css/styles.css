@@ -323,6 +323,50 @@ a:hover .images { opacity:0.6; }
 --------------------------------------------------------------------------------------------------------*/
 
 
+/* =10a. Image Hover Overlay
+--------------------------------------------------------------------------------------------------------*/
+.covering-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.75);
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	z-index: 10;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.padding-wrapper a:hover .covering-image {
+	opacity: 1;
+}
+
+.covering-image .info-box-content {
+	height: 100%;
+	width: 100%;
+}
+
+.covering-image .info-box-content .parent {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.covering-image .info-box-content .child {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.covering-image h4, .covering-image h4 span {
+	color: #fff;
+}
+/* End Image Hover Overlay
+--------------------------------------------------------------------------------------------------------*/
+
+
 /* =11. Footer
 --------------------------------------------------------------------------------------------------------*/
 #footer { min-height:105px; margin:0px; padding:21px 0px 19px; border-top:1px solid rgba(0,0,0,0.05); width:100%; position:relative; -webkit-transform: translateZ(0); -webkit-transform: translate3d(0, 0, 0); transform: translateZ(0); background:#fff; text-align:center }
