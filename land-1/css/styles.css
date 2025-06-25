@@ -297,6 +297,8 @@ a:hover .images { opacity:0.6; }
 .background-image11 { background:url(../images/11.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
 .background-image12 { background:url(../images/12.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
 .background-image13 { background:url(../images/13.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image13_1 { background:url(../images/13_1.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
+.background-image13_2 { background:url(../images/13_2.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
 .background-image14 { background:url(../images/14.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
 .background-image15 { background:url(../images/15.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
 .background-image16 { background:url(../images/16.jpg) no-repeat center; height:100%; display:block; width:100%; background-size:cover; }
@@ -369,7 +371,7 @@ a:hover .images { opacity:0.6; }
 
 /* =11. Footer
 --------------------------------------------------------------------------------------------------------*/
-#footer { min-height:105px; margin:0px; padding:21px 0px 19px; border-top:1px solid rgba(0,0,0,0.05); width:100%; position:relative; -webkit-transform: translateZ(0); -webkit-transform: translate3d(0, 0, 0); transform: translateZ(0); background:#fff; text-align:center }
+#footer { min-height:105px; margin:0px; padding:21px 0px 19px; border-top:1px solid rgba(0,0,0,0.05); width:100%; position:relative; -webkit-transform: translateZ(0); -webkit-transform: translate3d(0, 0, 0); transform: translateZ(0); background:#1b2b36; text-align:center }
 footer .container { padding:0 9px; }
 footer p { color:#F8B400; font-size:12px; padding:0; border:0; text-decoration:none }
 footer p a { color:#F8B400; }
